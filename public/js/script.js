@@ -47,13 +47,19 @@ recognition.addEventListener('result', (e) => {
       // Display playlists
       switch(emotion) {
         case 'joy':
-       document.querySelector('.playlist').src="https://open.spotify.com/playlist/66F0QrPzMPE9zCj8S1JZ1q?si=EI0nxstoRzayUlSStKP1sQ";
+       document.querySelector('.playlist').src="https://open.spotify.com/embed/playlist/66F0QrPzMPE9zCj8S1JZ1q?utm_source=generator";
           break;
         case 'love':
           document.querySelector('.playlist').src="https://open.spotify.com/playlist/64v2LytooaaE1b5ogu0uMo?si=Us6lSynkRm2Nkr31FqWySA";
           break;
-          case 'love':
+        case 'anger':
           document.querySelector('.playlist').src="https://open.spotify.com/playlist/64v2LytooaaE1b5ogu0uMo?si=Us6lSynkRm2Nkr31FqWySA";
+          break;
+        case 'fear':
+          document.querySelector('.playlist').src="https://open.spotify.com/playlist/31xXPz9MHntnxHvTQ7SYdu?si=5cf15114362b4f1e";
+          break;
+        case 'surprise':
+          document.querySelector('.playlist').src="https://open.spotify.com/embed/playlist/3CkJH2FzvJciO8UmkzHCMU?utm_source=generator";
           break;
       }
    
